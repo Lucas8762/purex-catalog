@@ -4,160 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo Purex | Loja Oficial</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        /* Truncar em 2 linhas sem plugin */
         .line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-clamp:2; overflow:hidden; }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col">
-
-    <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
-        <!-- Top row: logo + whatsapp -->
+<body class="bg-gray-50 min-h-screen flex flex-col pb-16 md:pb-0"> <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
         <div class="container mx-auto px-4 pt-3 pb-2 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="bg-blue-900 text-white font-extrabold w-9 h-9 rounded-md flex items-center justify-center text-lg">P</div>
                 <h1 class="text-xl font-extrabold text-slate-900 tracking-tight">PUREX<span class="text-blue-600">.</span></h1>
             </div>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="flex items-center gap-2 text-green-700 bg-green-50 hover:bg-green-100 px-3 py-1.5 rounded-full text-xs font-bold">
+            <a href="https://wa.me/5511999999999" target="_blank" class="flex items-center gap-2 text-green-700 bg-green-50 hover:bg-green-100 px-3 py-1.5 rounded-full text-xs font-bold transition">
                 <i class="fab fa-whatsapp"></i>
                 <span class="hidden sm:inline">Atendimento</span>
             </a>
         </div>
-        <!-- Search prominent -->
         <div class="container mx-auto px-4 pb-3">
-            <div class="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 border border-gray-200 focus-within:border-red-400 focus-within:ring-2 ring-red-100 transition">
+            <div class="flex items-center gap-2 bg-gray-100 rounded-lg px-3 py-2 border border-gray-200 focus-within:border-blue-400 focus-within:ring-2 ring-blue-100 transition">
                 <i class="fas fa-search text-gray-400"></i>
-                <input type="text" placeholder="Buscar produtos e vitaminas" class="bg-transparent outline-none text-sm w-full text-gray-700" />
+                <input type="text" placeholder="Buscar produtos..." class="bg-transparent outline-none text-sm w-full text-gray-700" />
             </div>
         </div>
-        <!-- Chips categories -->
         <div class="border-t border-gray-100 bg-white">
             <div class="container mx-auto px-4 py-2">
                 <div class="flex overflow-x-auto no-scrollbar gap-2">
-                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">🔥 Destaques</button>
-                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">💪 Performance</button>
-                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">🌿 Naturais</button>
-                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition">🧠 Foco</button>
+                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition">🔥 Destaques</button>
+                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition">💪 Performance</button>
+                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition">🌿 Naturais</button>
+                    <button class="px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-full text-xs font-medium whitespace-nowrap hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition">🧠 Foco</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8 flex-grow">
+    <main class="container mx-auto px-4 py-6 flex-grow">
         
-        <div class="flex items-center gap-2 mb-6">
-            <h2 class="text-xl font-bold text-gray-800">Seleção Nature Vida & Purex</h2>
-            <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-full uppercase">Original</span>
+        <div class="flex items-center gap-2 mb-4">
+            <h2 class="text-lg font-bold text-gray-800">Destaques da Loja</h2>
+            <span class="bg-blue-100 text-blue-700 text-[10px] font-bold px-2 py-1 rounded-full uppercase">Promo</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <!-- Produto 1 -->
-            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-4 md:p-0">
-                <div class="relative bg-gray-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0 rounded-lg md:rounded-none">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/photoroom_20251024_214454-5f7a27d2c1267f701117616655439932-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Elixpegador Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/photoroom_20251024_214509-7d8f7ee1418420d24c17616655441612-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Elixpegador Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w-full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/photoroom_20251024_214454-5f7a27d2c1267f701117616655439932-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Frente">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/photoroom_20251024_214509-7d8f7ee1418420d24c17616655441612-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Verso">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">Elixpegador 30 Cápsulas</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Estimulante natural potente.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 120,00</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/elixpegador-30-capsulas-510mg/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">Elixpegador 30 Cápsulas</h3>
+                        <p class="text-xs text-gray-500 mt-1">Estimulante natural.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 120,00</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/elixpegador-30-capsulas-510mg/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 2 -->
-            <div class="bg-white border border-slate-100 rounded-2xl hover:border-red-200 hover:shadow-lg transition group flex md:block overflow-hidden">
-                <div class="relative bg-slate-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-21-56_90a5ce84-04596faa49b32cec5717616087112080-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Vitamina C Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-01-50_58a54fab-89921065d4c753904117616087161600-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Vitamina C Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w-full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-21-56_90a5ce84-04596faa49b32cec5717616087112080-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-01-50_58a54fab-89921065d4c753904117616087161600-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">Vitamina C Nature Vida</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Imunidade e proteção diária.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 39,90</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/vitamina-c-nature-vida-60-capsulas-495mg/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">Vitamina C Nature Vida</h3>
+                        <p class="text-xs text-gray-500 mt-1">Imunidade blindada.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 39,90</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/vitamina-c-nature-vida-60-capsulas-495mg/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 3 -->
-            <div class="bg-white border border-slate-100 rounded-2xl hover:border-red-200 hover:shadow-lg transition group flex md:block overflow-hidden">
-                <div class="relative bg-slate-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-14-as-17-27-36_9c1244d9-726cf66c678cec511a17616085645116-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Psyllium Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-51-48_b86d13ad-1d28afd5bfaf8de16c17616085733479-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Psyllium Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w/full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-14-as-17-27-36_9c1244d9-726cf66c678cec511a17616085645116-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-51-48_b86d13ad-1d28afd5bfaf8de16c17616085733479-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">Psyllium Nature Vida</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Fibras para saúde intestinal.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 39,90</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/capsulas-de-psyllium-nature-vida-60-unidades-490mg/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">Psyllium Nature Vida</h3>
+                        <p class="text-xs text-gray-500 mt-1">Saúde intestinal.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 39,90</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/capsulas-de-psyllium-nature-vida-60-unidades-490mg/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 4 -->
-            <div class="bg-white border border-slate-100 rounded-2xl hover:border-red-200 hover:shadow-lg transition group flex md:block overflow-hidden">
-                <div class="relative bg-slate-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-39-00_908d58ef-74f1f04d4a8250e4da17616081200806-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Treonato Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-95a8756f024f4aabc117616081270085-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Treonato Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w/full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-39-00_908d58ef-74f1f04d4a8250e4da17616081200806-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-95a8756f024f4aabc117616081270085-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">Magnésio Treonato</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Foco, memória e cérebro.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 45,00</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/nature-vida-magnesio-treonato-capsulas-de-500mg-60-unidades/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">Magnésio Treonato</h3>
+                        <p class="text-xs text-gray-500 mt-1">Foco e memória.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 45,00</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/nature-vida-magnesio-treonato-capsulas-de-500mg-60-unidades/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 5 -->
-            <div class="bg-white border border-slate-100 rounded-2xl hover:border-red-200 hover:shadow-lg transition group flex md:block overflow-hidden">
-                <div class="relative bg-slate-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-38-59_db839993-911b765227059ec49217616077581775-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="Dimalato Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-43aef726f8c31e03d817616077670130-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="Dimalato Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w/full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-38-59_db839993-911b765227059ec49217616077581775-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-43aef726f8c31e03d817616077670130-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">Magnésio Dimalato</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Energia e dores musculares.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 45,00</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/magnesio-dimalato-nature-vida-capsulas-500mg-60-unidades/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">Magnésio Dimalato</h3>
+                        <p class="text-xs text-gray-500 mt-1">Energia muscular.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 45,00</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/magnesio-dimalato-nature-vida-capsulas-500mg-60-unidades/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 6 -->
-            <div class="bg-white border border-slate-100 rounded-2xl hover:border-red-200 hover:shadow-lg transition group flex md:block overflow-hidden">
-                <div class="relative bg-slate-50 overflow-hidden w-28 h-28 md:w-full md:h-40 flex-shrink-0">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-38-58_a60131aa-e1c045231c96ab6f8b17616040803182-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0" alt="5MAG Frente">
-                    <img loading="lazy" src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-6d548b37e2602d826217616040909143-1024-1024.webp" class="absolute inset-0 w-full h-full object-contain hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100" alt="5MAG Verso">
-                    <span class="hidden md:inline-block absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full">Oferta</span>
+            <div class="bg-white border border-gray-100 shadow-sm rounded-xl hover:shadow-md transition group flex flex-row md:flex-col overflow-hidden p-3 md:p-0">
+                <div class="relative bg-gray-50 w-24 h-24 md:w/full md:h-48 flex-shrink-0 rounded-lg md:rounded-none overflow-hidden">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-23-as-11-38-58_a60131aa-e1c045231c96ab6f8b17616040803182-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 md:transition-opacity md:duration-500 md:opacity-100 md:group-hover:opacity-0">
+                    <img src="https://dcdn-us.mitiendanube.com/stores/006/884/560/products/imagem-do-whatsapp-de-2025-10-22-as-22-52-18_8b4c97ac-6d548b37e2602d826217616040909143-1024-1024.webp" class="absolute inset-0 w/full h/full object-contain p-2 hidden md:block md:transition-opacity md:duration-500 md:opacity-0 md:group-hover:opacity-100">
                 </div>
-                <div class="pl-4 md:p-4 flex-1 min-w-0">
-                    <h3 class="text-sm md:text-base font-medium text-gray-900 leading-tight line-clamp-2">5MAG Magnésio</h3>
-                    <p class="text-xs text-gray-500 mt-1 mb-2 md:mb-3">Mix completo de 5 tipos.</p>
-                    <div class="flex items-center justify-between md:mt-1">
-                        <span class="text-base md:text-lg font-bold text-gray-900">R$ 39,90</span>
-                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/nature-vida-5mag-magnesio-500mg-capsulas-60-unidades/" target="_blank" rel="noopener" class="bg-red-600 hover:bg-red-700 text-white text-[11px] font-semibold px-4 py-2 rounded-full transition shadow-sm">Adicionar</a>
+                <div class="flex-1 pl-4 md:p-4 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm md:text-base font-bold text-gray-900 leading-tight line-clamp-2">5MAG Magnésio</h3>
+                        <p class="text-xs text-gray-500 mt-1">Mix de 5 tipos.</p>
+                    </div>
+                    <div class="flex items-center justify-between mt-2 md:mt-4">
+                        <span class="text-sm md:text-lg font-extrabold text-gray-900">R$ 39,90</span>
+                        <a href="https://purexsuplementos.lojavirtualnuvem.com.br/produtos/nature-vida-5mag-magnesio-500mg-capsulas-60-unidades/" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-sm transition">Adicionar</a>
                     </div>
                 </div>
             </div>
@@ -165,19 +157,17 @@
         </div>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 mt-auto">
-        <div class="container mx-auto px-4 py-8 text-center">
-            <p class="text-sm text-slate-500">Purex Suplementos &copy; 2024. Todos os direitos reservados.</p>
+    <nav class="fixed bottom-0 inset-x-0 bg-white border-t border-gray-200 p-2 z-50 md:hidden">
+        <div class="grid grid-cols-4 gap-2 text-center text-xs text-gray-500">
+            <a href="#" class="flex flex-col items-center py-1 text-red-600 font-bold"><i class="fas fa-home text-lg mb-1"></i>Início</a>
+            <a href="#" class="flex flex-col items-center py-1 hover:text-red-600"><i class="fas fa-search text-lg mb-1"></i>Busca</a>
+            <a href="#" class="flex flex-col items-center py-1 hover:text-red-600"><i class="fas fa-shopping-bag text-lg mb-1"></i>Pedidos</a>
+            <a href="#" class="flex flex-col items-center py-1 hover:text-red-600"><i class="fas fa-user text-lg mb-1"></i>Perfil</a>
         </div>
-        <!-- Bottom Tab Bar (iFood-like) -->
-        <nav class="sticky bottom-0 inset-x-0 bg-white border-t border-slate-200 p-2">
-            <div class="grid grid-cols-4 gap-2 text-center text-xs text-slate-600">
-                <a href="#" class="flex flex-col items-center py-2 rounded-lg text-red-600 font-bold"><i class="fas fa-home text-lg mb-1"></i>Início</a>
-                <a href="#" class="flex flex-col items-center py-2 rounded-lg hover:text-red-600"><i class="fas fa-tags text-lg mb-1"></i>Ofertas</a>
-                <a href="#" class="flex flex-col items-center py-2 rounded-lg hover:text-red-600"><i class="fas fa-shopping-bag text-lg mb-1"></i>Carrinho</a>
-                <a href="#" class="flex flex-col items-center py-2 rounded-lg hover:text-red-600"><i class="fas fa-user text-lg mb-1"></i>Perfil</a>
-            </div>
-        </nav>
+    </nav>
+
+    <footer class="hidden md:block bg-white border-t border-gray-200 mt-auto py-8 text-center">
+        <p class="text-sm text-gray-500">Purex Suplementos &copy; 2024. Todos os direitos reservados.</p>
     </footer>
 
 </body>
